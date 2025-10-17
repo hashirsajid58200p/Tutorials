@@ -1,0 +1,17 @@
+Restful Api - JSON
+
+GET /users - List all users - Done
+
+GET /users/1 - get users with id 1 - Done
+GET /users/2 - get users with id 2 - Done
+
+Dynamic path parameters
+GET api/users/:id 
+
+:id -> variable
+
+POST /users - create new users 
+
+PATCH /users/1 - Edit the user with id 1
+
+DELETE /users/1 - DELETE the users with id 1

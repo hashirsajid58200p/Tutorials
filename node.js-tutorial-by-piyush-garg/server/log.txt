@@ -1,7 +1,0 @@
-1760111939262: GET / New req received
-1760111942603: GET / New req received
-1760112028919: GET /about New req received
-1760112112763: GET /about New req received
-1760112296754: GET /about New req received
-1760112307238: GET / New req received
-1760112310125: GET /signup New req received

@@ -10,8 +10,8 @@ GET api/users/:id
 
 :id -> variable
 
-POST /users - create new users 
+POST /users - create new users - Done
 
-PATCH /users/1 - Edit the user with id 1
+PATCH /users/1 - Edit the user with id 1 - Done
 
-DELETE /users/1 - DELETE the users with id 1
+DELETE /users/1 - DELETE the users with id 1 - Done

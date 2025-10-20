@@ -5,7 +5,18 @@ const users = require("./MOCK_DATA.json");
 const app = express();
 const port = 8000;
 
+// Middleware
 app.use(express.urlencoded({ extended: false }));
+
+app.use((req, res, next) => {
+  fs.appendFile(
+    "log.txt",
+    `${Date.now()}: ${req.method}: ${req.path}\n`,
+    (err, data) => {
+      next();
+    }
+  );
+});
 
 app.get("/users", (req, res) => {
   const html = `
@@ -18,6 +29,7 @@ app.get("/users", (req, res) => {
 
 //REST API
 app.get("/api/users", (req, res) => {
+  res.setHeader("X-MyName", "John Doe");
   return res.json(users);
 });
 
